@@ -5,6 +5,12 @@
   font-family: sans-serif;
 }
 
+.main {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
 .header {
   display: flex;
   flex-direction: row;
@@ -79,7 +85,7 @@
   margin-top: 100px;
   justify-content: center;
   align-items: center;
-  background-color: #f9faf8;
+  background-color: gray;
   color: black;
 }
 
@@ -87,6 +93,117 @@ button {
   height: 25px;
   width: 90px;
   border-radius: 8px;
-  background-color: #3882F6;
+  background-color: #3882f6;
   color: #f9faf8;
+  border: #3882f6;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.infoblock {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h2 {
+  font-size: 36px;
+  font-weight: extra-bold;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.illustrations {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 70%;
+  height: 50vh;
+}
+
+.illustration-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 300px;
+  width: 180px;
+}
+
+.illustration-container > p {
+  font-size: 18px;
+  color: #1f2937;
+}
+
+.illustration {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  height: 180px;
+  width: 180px;
+  border: 5px solid #3882f6;
+  border-radius: 10%;
+}
+
+.quoteblock {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 420px;
+  background-color: #e5e7eb;
+  color: #1f2937;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+.quote {
+  font-size: 36px;
+  font-style: italic;
+  font-weight: lighter;
+  width: 800px;
+  margin-top: 10%;
+}
+
+.quote-author {
+  margin-left: 35%;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 300px;
+  color: #f9faf8;
+}
+
+.call-block {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #3882f6;
+  height: 40%;
+  width: 80%;
+  border-radius: 10px;
+}
+
+.call-text {
+  margin-left: 12%;
+}
+.call-text > h3 {
+  font-weight: bold;
+}
+.call-text > p {
+  font-weight: lighter;
+}
+.call-block > button {
+  margin-right: 10%;
+  border:2px solid #f9faf8;
+}
+.call-block > button:hover {
+  cursor: pointer;
 }
